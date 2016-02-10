@@ -1,0 +1,14 @@
+﻿@section SPAViews {
+    @Html.Partial("_Home")
+}
+@section Scripts{
+    <script>
+        $(document).ready(function() {
+            $(':checkbox').iphoneStyle({
+                checkedLabel: 'In',
+                uncheckedLabel: 'Out'
+            });
+        });
+    </script>
+
+}
