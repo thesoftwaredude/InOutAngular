@@ -1,8 +1,8 @@
 ﻿<style>
-    .row{
+/*.row{
   margin-top: 30px;
   margin-bottom: 30px
-}
+}*/
 </style>
 <!-- http://ios-checkboxes.awardwinningfjords.com/ -->
 
@@ -10,81 +10,17 @@
     Whos is in who is out
 </div>
 
-<div class="row">
-    <div class="col-md-1">
-        <img src="~/Assets/Images/male01.png" style="width: 50px; height: 50px;"/>
-    </div>
-    <div class="col-md-7">
-        Daniel Craig
-    </div>
-    <div class="col-md-4">
-        <input type="checkbox" value="1"/>
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-1">
-        <img src="~/Assets/Images/male02.png" style="width: 50px; height: 50px;" />
-    </div>
-    <div class="col-md-7">
-        Christoph Waltz
-    </div>
-    <div class="col-md-4">
-        <input type="checkbox" value="1" checked />
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-1">
-        <img src="~/Assets/Images/female01.png" style="width: 50px; height: 50px;" />
-    </div>
-    <div class="col-md-7">
-        Léa Seydoux
-    </div>
-    <div class="col-md-4">
-        <input type="checkbox" value="1" checked />
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-1">
-        <img src="~/Assets/Images/male03.png" style="width: 50px; height: 50px;" />
-    </div>
-    <div class="col-md-7">
-        Ralph Fiennes
-    </div>
-    <div class="col-md-4">
-        <input type="checkbox" value="1" checked />
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-1">
-        <img src="~/Assets/Images/female02.png" style="width: 50px; height: 50px;" />
-    </div>
-    <div class="col-md-7">
-        Monica Bellucci
-    </div>
-    <div class="col-md-4">
-        <input type="checkbox" value="1" checked />
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-1">
-        <img src="~/Assets/Images/male04.png" style="width: 50px; height: 50px;" />
-    </div>
-    <div class="col-md-7">
-        Ben Whishaw
-    </div>
-    <div class="col-md-4">
-        <input type="checkbox" value="1" checked />
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-1">
-        <img src="~/Assets/Images/female03.png" style="width: 50px; height: 50px;" />
-    </div>
-    <div class="col-md-7">
-        Naomie Harris
-    </div>
-    <div class="col-md-4">
-        <input type="checkbox" value="1" checked/>
-    </div>
-</div>
 
+<div class="container" ng-controller="officeController" ng-cloak>
+    <div class="row" ng-repeat="employee in office">
+        <div class="col-md-1">
+            <img ng-src="{{employee.imageUrl}}" style="width: 50px; height: 50px;"/>
+        </div>
+        <div class="col-md-7">
+            {{employee.name}}
+        </div>
+        <div class="col-md-4">
+            <input type="checkbox" ng-checked="{{employee.inOffice}}"/>
+        </div>
+    </div>
+</div>

@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using InOut.UI;
 using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartup(typeof(InOut.UI.Startup))]
+[assembly: OwinStartup(typeof(Startup))]
 
 namespace InOut.UI
 {
