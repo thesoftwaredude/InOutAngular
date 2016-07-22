@@ -51,3 +51,7 @@ textarea {
 .hover {
     background: #EEE;
 }
+
+.hand {
+    cursor: pointer;
+}

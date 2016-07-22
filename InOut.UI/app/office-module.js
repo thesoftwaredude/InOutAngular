@@ -1,4 +1,4 @@
-﻿var officeModule = angular.module("officeModule", ['ngRoute', 'ngResource'])
+﻿var officeModule = angular.module("officeModule", ['ngRoute', 'ngResource', 'uiSwitch'])
 //    .directive('onload',function() {
 //        return function(scope, element, attrs) {
 //            setTimeout(function doWork() {

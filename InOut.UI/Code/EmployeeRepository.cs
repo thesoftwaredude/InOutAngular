@@ -14,7 +14,7 @@ namespace InOut.UI.api
                 new Employee {Id = 4, ImageUrl = "/Assets/Images/male03.png", Name = "Ralph Fiennes", InOffice = true},
                 new Employee {Id = 5, ImageUrl = "/Assets/Images/female02.png", Name = "Monica Bellucci", InOffice = true },
                 new Employee {Id = 6, ImageUrl = "/Assets/Images/male04.png", Name = "Ben Whishaw", InOffice = true},
-                new Employee {Id = 7, ImageUrl = "/Assets/Images/female03.png", Name = "Naomie Harris", InOffice = true}
+                new Employee {Id = 7, ImageUrl = "/Assets/Images/female03.png", Name = "Naomie Harris", InOffice = false}
             };
 
         public IEnumerable<Employee> Get()
