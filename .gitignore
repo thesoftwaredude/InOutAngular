@@ -33,4 +33,3 @@ aspnet_client
 
 /packages/
 /InOut.UI/Scripts/i18n/angular*.js
-/InOut.UI/Scripts/angular*
