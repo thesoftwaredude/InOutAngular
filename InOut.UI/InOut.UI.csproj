@@ -272,7 +272,6 @@
     <Content Include="app\office\office-controller.js" />
     <Content Include="app\office\office-repository.js" />
     <Content Include="app\office-module.js" />
-    <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular-resource.js" />
     <Content Include="Scripts\angular-resource.min.js" />
     <Content Include="Scripts\angular-route.js" />
