@@ -3,6 +3,5 @@
     $scope.toggleStatus = function (employee) {
         employee.inOffice = !employee.inOffice;
         officeRepository.save(employee);
-        chat.Server.hello
     };
 });

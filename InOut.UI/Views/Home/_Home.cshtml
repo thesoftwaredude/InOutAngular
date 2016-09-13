@@ -20,7 +20,7 @@
             {{employee.name}}
         </div> 
         <div class="col-md-4">
-            <switch name="InOutOffice" ng-model="employee.inOffice" on="In Office" off="Out Of Office" class="wide green"></switch>
+            <switch name="InOutOffice" ng-model="employee.inOffice" on="In Office" off="Out Of Office" class="wide green" disabled="false" ng-click="toggleStatus(employee)"></switch>
         </div>
     </div>
 </div>

@@ -9,7 +9,8 @@
         var html = '';
         html += '<span';
         html += ' class="switch' + (attrs.class ? ' ' + attrs.class : '') + '"';
-        html += attrs.ngModel ? ' ng-click="' + attrs.disabled + ' ? ' + attrs.ngModel + ' : ' + attrs.ngModel + '=!' + attrs.ngModel + (attrs.ngChange ? '; ' + attrs.ngChange + '()"' : '"') : '';
+        //html += attrs.ngModel ? ' ng-click="' + attrs.disabled + ' ? ' + attrs.ngModel + ' : ' + attrs.ngModel + '=!' + attrs.ngModel + (attrs.ngChange ? '; ' + attrs.ngChange + '()"' : '"') : '';
+//        html += ' ng-click="' + attrs.ngClick + '")';
         html += ' ng-class="{ checked:' + attrs.ngModel + ', disabled:' + attrs.disabled + ' }"';
         html += '>';
         html += '<small></small>';
@@ -26,3 +27,6 @@
     }
     }
 });
+
+
+//toggleStatus(employee)
