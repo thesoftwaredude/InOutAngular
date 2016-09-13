@@ -1,4 +1,24 @@
-﻿var officeModule = angular.module("officeModule", ['ngRoute', 'ngResource', 'uiSwitch'])
+﻿var officeModule = angular.module("officeModule", ['ngRoute', 'ngResource', 'uiSwitch']);
+(function() {
+
+
+    $(function() {
+        $.connection.hub.logging = true;
+        $.connection.hub.start();
+
+    });
+
+    $.connection.hub.error(function(err) {
+        console.log('An error occurredL ' + err);
+    });
+
+    //officeModule.value('chat', $.connection.chat);
+    //angular('officeModule').value('chat', $.connection.chat);
+
+});
+
+
+
 //    .directive('onload',function() {
 //        return function(scope, element, attrs) {
 //            setTimeout(function doWork() {

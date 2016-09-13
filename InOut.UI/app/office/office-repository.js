@@ -8,3 +8,13 @@
         }
     }
 });
+
+
+
+
+officeModule.factory('chat', function () {
+    //$.connection.chat
+    return {
+        
+    }
+});
